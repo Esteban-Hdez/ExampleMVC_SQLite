@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".View.MainActivity">
+
+    <TextView
+        android:id="@+id/tv_principal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50px"
+        android:layout_marginBottom="50px"
+        android:text="SQLITE CRUD"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textSize="48sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_insertar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:background="@drawable/boton_redondo"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="30px"
+                android:layout_marginRight="30px"
+                android:layout_weight="1"
+                android:text="Insertar" />
+
+            <Button
+                android:id="@+id/btn_consultar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:background="@drawable/boton_redondo"
+                android:layout_marginLeft="30px"
+                android:layout_marginRight="30px"
+                android:layout_weight="1"
+                android:text="Consultar" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_actualizar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:background="@drawable/boton_redondo"
+                android:layout_marginLeft="30px"
+                android:layout_marginRight="30px"
+                android:layout_weight="1"
+                android:text="Actualizar" />
+
+            <Button
+                android:id="@+id/btn_eliminar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:background="@drawable/boton_redondo"
+                android:textStyle="bold"
+                android:layout_marginLeft="30px"
+                android:layout_marginRight="30px"
+                android:layout_weight="1"
+                android:text="Eliminar" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
